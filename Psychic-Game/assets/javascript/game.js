@@ -1,10 +1,63 @@
-//Setting up the initial alphabet array to select for guessing 
-var letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-//Setting up the variables that will be used to store Wins, Losses, Guesses left, and your guesses
+var computerChoices = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+
 var wins = 0;
-var loss = 0;
-var guessLeft = 9;
-var yourGuess;
+var losses = 0;
+var guesses = 9;
+var guessesLeft = 9;
+var guessedLetters = [];
+var letterToGuess = null;
 
-console.log(letters);
+var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+var updateGuessesLeft = function() {
+  document.querySelector('#guesses-left').innerHTML = "Guesses left: " + guessesLeft;
+};
+
+var updateLetterToGuess = function() {
+  this.letterToGuess = this.computerChoices[Math.floor(Math.random() * this.computerChoices.length)];
+};
+var updateGuessesSoFar = function() {
+  document.querySelector('#your-guess').innerHTML = "Your Guesses so far: " + guessedLetters.join(', ');
+};
+// Function will be called when we reset everything
+var reset = function() {
+  totalGuesses = 9;
+  guessesLeft = 9;
+  guessedLetters = [];
+
+  updateLetterToGuess();
+  updateGuessesLeft();
+  updateGuessesSoFar();
+}
+
+updateLetterToGuess();
+updateGuessesLeft();
+
+
+
+document.onkeyup = function(event) {
+    guessesLeft--;
+  var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+
+  guessedLetters.push(userGuess);
+  updateGuessesLeft();
+  updateGuessesSoFar();
+
+        if (guessesLeft > 0){
+            if (userGuess == letterToGuess){
+                wins++;
+                document.querySelector('#win').innerHTML = "Wins: " + wins;
+                alert("Yes, you are psychic!");
+                reset();
+            }
+        }else if(guessesLeft == 0){
+            // Then we will loss and we'll update the html to display the loss 
+            losses++;
+            document.querySelector('#loss').innerHTML = "Losses: " + losses;
+            alert("Sorry, you're not psychic, maybe try again?");
+            // Then we'll call the reset. 
+            reset();
+        }
+};

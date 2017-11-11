@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Inconsolata', monospace;
+}
+
+h1 {
+	font-size: 35px;
+}
+
+p {
+	font-size: 23px;
+}
+
+.container {
+	width: 75%;
+	height: 100%;
+	margin-left: 10%;
+	margin-top: 2%;
+}
+
+.main-header {
+	margin-bottom: 3%;
+}
