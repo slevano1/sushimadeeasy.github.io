@@ -1,0 +1,52 @@
+* {
+	color: white;
+ }
+img {
+	width: 100%;
+}
+body {
+	background-image: url('../images/space.jpg');
+	background-size: 100%;
+}
+.masthead-brand {
+	color: white;
+	font-size: 2em;
+}
+.image {
+	width:12%;
+	float:left;
+	margin-left:30px;
+}
+p{
+	text-align: center;
+}
+h3{
+	text-align: center;
+}
+#chr{
+	width:100%;
+}
+#chr1{
+	color:green;
+	font-weight:bold;
+}
+.panel-heading{
+	font-size:2em;
+}
+.panel{
+	width:100%;
+}
+.hpdisplay{
+	font-size: 2em;
+}
+#enemies{
+	color:yellow;
+	font-weight:bold;
+}
+#defender{
+	color:red;
+	font-weight:bold;
+}
+.panel-body {
+	background-color:transparent;
+}

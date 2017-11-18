@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>StarTrek RPG game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="assets/javascripts/java.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="masthead clearfix">
+                <h3 class="masthead-brand">StarTrek RPG</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cd-md-12 selection">
+                <div class="image" id="picard" hp="120" ap="15" cp="30">
+                    <h3 id="picard-name">Picard</h3>
+                    <img src="assets/images/picard.png" alt="captain picard">
+                    <p class="hpdisplay">120</p>
+                </div>
+                <div class="image" id="data" hp="150" ap="10" cp="35">
+                    <h3 id="data-name">Data</h3>
+                    <img src="assets/images/data.png" alt="captain data">
+                    <p class="hpdisplay">150</p>
+                </div>
+                <div class="image" id="spock" hp="100" ap="25" cp="55">
+                    <h3 id="spock-name">Spock</h3>
+                    <img src="assets/images/spock.png" alt="captain spock">
+                    <p class="hpdisplay">100</p>
+                </div>
+                <div class="image" id="worf" hp="400" ap="5" cp="10">
+                    <h3 id="worf-name">Worf</h3>
+                    <img src="assets/images/worf.png" alt="captain worf">
+                    <p class="hpdisplay">400</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-success cd-md-8" id="chr">
+                <div class="panel-heading" id="chr1">YOUR CHARACTER</div>
+                <div class="panel-body yourcharacter">Panel Content</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-success cd-md-8">
+                <div class="panel-heading" id="enemies">ENEMIES AVAILABLE TO ATTACK</div>
+                <div class="panel-body enemies">Panel Content</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cd-md-3 fightaction">
+                <h3>ACTION</h3>
+                <button type="button" class="btn btn-danger" id="atkbutton">ATTACK</button>
+                <button type="button" class="btn btn-success" id="resetbutton">reset</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-success cd-md-8 ">
+                <div class="panel-heading" id="defender">DEFENDER</div>
+                <div class="panel-body defender">Panel Content</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cd-md-8 status">
+                <h3>status</h3>
+            </div>
+        </div>
+        <audio controls autoplay>
+            <source src="assets/images/theme.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+
+</html>
