@@ -1,0 +1,21 @@
+.btn {
+	margin-left:10px;
+	margin-top:5px;
+}
+#inputBox {
+	margin-top:5px;
+}
+span {
+	float:left;
+	margin-right:10px;
+	margin-left: 10px;
+	border: solid 3px #5BC0DE;
+	margin-top : 10px;
+}
+.jumbotron {
+	padding:10px;
+}
+
+h4{
+	text-align: center;
+}
