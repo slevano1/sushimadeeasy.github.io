@@ -1,12 +1,12 @@
 $(document).ready(function() {
     var config = {
-        apiKey: "AIzaSyCWJm5Ly_1e0_tlqWtBldbEm0JgXEh0A-Y",
-        authDomain: "codersbay-bbe5c.firebaseapp.com",
-        databaseURL: "https://codersbay-bbe5c.firebaseio.com",
-        projectId: "codersbay-bbe5c",
-        storageBucket: "codersbay-bbe5c.appspot.com",
-        messagingSenderId: "90435835650"
-    };
+    apiKey: "AIzaSyAVJHRlBb7jvw5JPuEGZ86sKqh_p-9Ltpw",
+    authDomain: "hw-firebase-train.firebaseapp.com",
+    databaseURL: "https://hw-firebase-train.firebaseio.com",
+    projectId: "hw-firebase-train",
+    storageBucket: "hw-firebase-train.appspot.com",
+    messagingSenderId: "419312908898"
+      };
     firebase.initializeApp(config);
 
     var i = 0;
