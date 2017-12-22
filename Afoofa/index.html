@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tux</title>
+  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- CSS Source File -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  </head>
+  
+  <body>
+    <!-- <div id="wrapper"> -->
+    <!-- Banner along the top -->
+      <div class="page-header">
+        <h1 class="text-center">AFOOFA (All For One, One For All)</h1>  
+      </div>
+              <!-- navbar -->
+              <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <button type="button" class="btn btn-light" <a href="#" data-toggle="modal" data-target="#login-modal">Login</button>
+                      
+                  <!-- Login Modal-->
+                    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                          <div class="loginmodal-container">
+                              <h1>Login to Your Account</h1><br>
+                              <form>
+                              <input type="text" name="user" placeholder="Username">
+                              <input type="password" name="pass" placeholder="Password">
+                              <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                              </form>
+                           <!--    <div class="container">
+                                <input type="email" id="txtEmail" placeholder="Email">
+                                <input type="password" id="txtPassword" placeholder="password" 
+                                ">
+                                <button id="btnLogin" class="btn btn-action">
+                                    log in
+                                </button>
+                                <button id="btnSignUp" class="btn btn-secondary">
+                                    Sign up
+                                </button>
+                                <button id="btnLogout" class="btn btn-action hide">
+                                    Log out
+                                </button>
+                              </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </ul> <!--end if login modal-->
+                    <!-- Search -->
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="text" id="enterText" placeholder="Search">
+                      <button class="btn btn-outline-success my-2 my-sm-0" id="submitText" type="submit">Search</button>
+                    </form>
+                  </div>
+                </nav>
+              <!-- End of NavBar -->   
+          </div>    
+        </div>
+      </div>
+    </nav>
+
+               <!-- Products Appear Here -->
+    <div class="container-fluid">    
+        <div id="clearIt">
+          <div class="card-colums">
+          </div>
+            <!-- <div id="pics" class="btn img-responsive">
+             <div class="price"></div>  
+            </div>  -->                                   
+        </div> 
+    </div>    
+
+        
+             
+
+   
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> 
+        <script type="text/javascript" src="assets/ecomm.js"></script>
+        <script src="assets/login.js"></script>
+   
+  </body>
+</html>
