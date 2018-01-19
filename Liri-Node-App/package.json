@@ -1,0 +1,28 @@
+{
+  "name": "liri_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "liri.js",
+  "scripts": {
+    "mytweets": "node liri.js my-tweets",
+    "spotify": "node liri.js spotify-this-song madonna",
+    "imdb": "node liri.js movie-this"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluffingtuna/liri-node-app.git"
+  },
+  "author": "bluffingtuna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluffingtuna/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/bluffingtuna/liri-node-app#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^3.0.6",
+    "request": "^2.81.0",
+    "spotify": "^0.3.0",
+    "twitter": "^1.7.0"
+  }
+}
